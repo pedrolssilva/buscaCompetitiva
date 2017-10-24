@@ -13,7 +13,6 @@ namespace Teste {
 			// apenas adiciona a peça na primeira coluna vazia
 
 			EstadoLig4 atual = (estadoAtual as EstadoLig4);
-
             for (int coluna = 0; coluna < EstadoLig4.COLUNAS; coluna++)
             {
                 for (int linha = (EstadoLig4.LINHAS - 1); linha >= 0; linha--)
@@ -21,11 +20,12 @@ namespace Teste {
 
                     if (atual.IsCelulaVazia(linha, coluna) == true)
                     {
-                        return proximosEstados.Add(atual.MarcarCelula(linha, coluna, id));
+                        return atual.MarcarCelula(linha, coluna, Id);                           
                     }
 
                 }
             }
+
             return null;
         }
 	}

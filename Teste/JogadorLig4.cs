@@ -54,6 +54,7 @@ namespace Teste
                     if (atual.IsCelulaVazia(linha, coluna) == true)
                     {
                         proximosEstados.Add(atual.MarcarCelula(linha, coluna, id));
+                        break;
                     }
 
                 }
@@ -85,6 +86,7 @@ namespace Teste
                     if (atual.IsCelulaVazia(linha, coluna) == true)
                     {
                         proximosEstados.Add(atual.MarcarCelula(linha, coluna, idDoOponente));
+                        break;
                     }
 
                 }
