@@ -6,8 +6,8 @@ using BuscaCompetitiva;
 namespace Teste {
 	class Program {
 		// apenas para encurtar os textos abaixo ;)
-		public const int X = EstadoTicTacToe.X;
-		public const int O = EstadoTicTacToe.O;
+		public const int X = EstadoLig4.X;
+		public const int O = EstadoLig4.O;
 
 		static void Main(string[] args) {
 			int contadorDeJogadas = 0;
@@ -42,8 +42,8 @@ namespace Teste {
 			//	{ X, 0, 0 }
 			//}, X);
 
-			Jogador jogadorX = new JogadorTicTacToeAleatorio(X);
-			Jogador jogadorO = new JogadorTicTacToeDificil(O);
+			Jogador jogadorX = new JogadorLig4Facil(X);
+			Jogador jogadorO = new JogadorLig4Facil(O);
 
 			// apenas para debug
 			Minimax.UtilizarPodaAlphaBeta = true;
@@ -54,7 +54,7 @@ namespace Teste {
 				Console.WriteLine("Jogada " + contadorDeJogadas);
 
 				Jogador jogador;
-				if (estadoDoTabuleiro.JogadorDoTurno == EstadoTicTacToe.X) {
+				if (estadoDoTabuleiro.JogadorDoTurno == EstadoLig4.X) {
 					jogador = jogadorX;
 				} else {
 					jogador = jogadorO;
@@ -77,10 +77,10 @@ namespace Teste {
 			Console.WriteLine("Total de estados avaliados: " + Minimax.EstadosAvaliados);
 
 			switch (estadoDoTabuleiro.Vencedor) {
-				case EstadoTicTacToe.X:
+				case EstadoLig4.X:
 					Console.WriteLine("Vencedor: " + jogadorX.Nome);
 					break;
-				case EstadoTicTacToe.O:
+				case EstadoLig4.O:
 					Console.WriteLine("Vencedor: " + jogadorO.Nome);
 					break;
 				default:
