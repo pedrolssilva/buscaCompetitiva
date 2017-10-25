@@ -1,0 +1,5 @@
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\BuscaCompetitiva\bin\Debug\BuscaCompetitiva.dll
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\BuscaCompetitiva\bin\Debug\BuscaCompetitiva.pdb
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\BuscaCompetitiva\obj\Debug\BuscaCompetitiva.csproj.CoreCompileInputs.cache
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\BuscaCompetitiva\obj\Debug\BuscaCompetitiva.dll
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\BuscaCompetitiva\obj\Debug\BuscaCompetitiva.pdb

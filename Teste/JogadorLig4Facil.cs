@@ -18,12 +18,10 @@ namespace Teste {
             {
                 for (int linha = (EstadoLig4.LINHAS - 1); linha >= 0; linha--)
                 {
-
                     if (atual.IsCelulaVazia(linha, coluna) == true)
                     {
-                        return proximosEstados.Add(atual.MarcarCelula(linha, coluna, id));
+                        return atual.MarcarCelula(linha, coluna, Id);
                     }
-
                 }
             }
             return null;

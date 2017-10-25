@@ -12,20 +12,20 @@ namespace Teste {
 		static void Main(string[] args) {
 			int contadorDeJogadas = 0;
 
-			//Estado estadoDoTabuleiro = new EstadoLig4(new int[,] {
-			//	{ 0, 0, 0, 0, 0, 0, 0 },
-			//	{ 0, 0, 0, 0, 0, 0, 0 },
-			//	{ 0, 0, 0, 0, 0, 0, 0 },
-			//	{ 0, 0, 0, 0, 0, 0, 0 },
-			//	{ 0, 0, 0, 0, 0, 0, 0 },
-			//	{ 0, 0, 0, 0, 0, 0, 0 }
-			//}, X);
-
+			Estado estadoDoTabuleiro = new EstadoLig4(new int[,] {
+				{ 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0 }
+			}, X);
+            /*
 			Estado estadoDoTabuleiro = new EstadoTicTacToe(new int[,] {
 				{ 0, 0, 0 },
 				{ 0, 0, 0 },
 				{ 0, 0, 0 }
-			}, X);
+			}, X);*/
 
 			// exemplo de resistência (X vai perder, mas não desiste logo de cara)
 			//Estado estadoDoTabuleiro = new EstadoTicTacToe(new int[,] {

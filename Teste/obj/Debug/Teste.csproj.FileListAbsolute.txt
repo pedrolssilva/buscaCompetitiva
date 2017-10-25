@@ -1,0 +1,9 @@
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\obj\Debug\Teste.csprojResolveAssemblyReference.cache
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\obj\Debug\Teste.csproj.CoreCompileInputs.cache
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\bin\Debug\Teste.exe.config
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\bin\Debug\Teste.exe
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\bin\Debug\Teste.pdb
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\bin\Debug\BuscaCompetitiva.dll
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\bin\Debug\BuscaCompetitiva.pdb
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\obj\Debug\Teste.exe
+C:\Users\Fersoftware\Source\Repos\buscaCompetitiva\Teste\obj\Debug\Teste.pdb

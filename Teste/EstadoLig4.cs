@@ -102,6 +102,117 @@ namespace Teste {
 
         public int CalculaVencedor(int[,] tabuleiro)
         {
+            int conta = 1;
+            //vertical
+            for (int col = 0; col < COLUNAS; col++)
+            {
+                for (int row = 0; row < LINHAS; row++)
+                {
+                    if (!IsCelulaVazia(row, col))
+                    {
+                        if ((tabuleiro[col, row] == X) && (tabuleiro[col, row + 1] == X))
+                        {
+                            conta++;
+                            if (conta >= 4)
+                                return X;
+                        }
+                        else if ((tabuleiro[col, row] == O) && (tabuleiro[col, row + 1] == O))
+                        {
+                            conta++;
+                            if (conta >= 4)
+                                return O;
+                        }
+                        else
+                        {
+                            conta = 1;
+                        }
+                    }
+                }
+            }
+            //Horizontal
+            for (int row = 0; row < COLUNAS; row++)
+            {
+                for (int col = 0; col < COLUNAS; col++)
+                {
+                    if (!IsCelulaVazia(row, col))
+                    {
+                        if ((tabuleiro[col, row] == X) && (tabuleiro[col + 1, row] == X))
+                        {
+                            conta++;
+                            if (conta >= 4)
+                                return X;
+                        }
+                        else if ((tabuleiro[col, row] == O) && (tabuleiro[col + 1, row] == O))
+                        {
+                            conta++;
+                            if (conta >= 4)
+                                return O;
+                        }
+                        else
+                        {
+                            conta = 1;
+                        }
+                    }
+                }
+            }
+            //Diagonal debaixo pra cima
+            for (int row = 0; row < LINHAS; row++)
+            {
+                for (int col = 0; col < COLUNAS; col++)
+                {
+                    if (!IsCelulaVazia(row, col))
+                    {
+                        for (int i = 0; i + row < LINHAS && col - i >= 0; i++)
+                        {
+                            if ((tabuleiro[col, row] == X) && (tabuleiro[col - i, row + i] == X))
+                            {
+                                conta++;
+                                if (conta >= 4)
+                                    return X;
+                            }
+                            else if ((tabuleiro[col, row] == O) && (tabuleiro[col - i, row + i] == O))
+                            {
+                                conta++;
+                                if (conta >= 4)
+                                    return O;
+                            }
+                            else
+                            {
+                                conta = 1;
+                            }
+                        }
+                    }
+                }
+            }
+            //Diagonal de cima pra baixo
+            for (int row = 0; row < LINHAS; row++)
+                    {
+                        for (int col = 0; col < COLUNAS; col++)
+                        {
+                            if (!IsCelulaVazia(row, col))
+                            {
+                                for (int i = 0; i + row < LINHAS && col + i < LINHAS; i++)
+                                {
+                                    if ((tabuleiro[col, row] == X) && (tabuleiro[col + i, row + i] == X))
+                                    {
+                                        conta++;
+                                        if (conta >= 4)
+                                            return X;
+                                    }
+                                    else if ((tabuleiro[col, row] == O) && (tabuleiro[col + i, row + i] == O))
+                                    {
+                                        conta++;
+                                        if (conta >= 4)
+                                            return O;
+                                    }
+                                    else
+                                    {
+                                        conta = 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
             return 0;
         }
 
