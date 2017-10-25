@@ -13,10 +13,7 @@ namespace Teste {
 			// menor a chance de encontrarmos a jogada ideal
 
 			EstadoLig4 atual = (estadoAtual as EstadoLig4);
-
-			// @@@
-
-			return null;
+            return Minimax.EfetuarJogada(this, atual, estadoAtual.NumeroMaximoDeTurnos);     		
 		}
 	}
 }
