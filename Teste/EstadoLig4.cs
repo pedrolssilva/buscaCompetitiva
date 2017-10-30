@@ -14,15 +14,16 @@ namespace Teste {
 
 		private readonly int[,] tabuleiro;
 		// @@@
-		// falta(m) atributo(s) aqui... ;)
-		private readonly int vencedor;
-		private int jogadorDaVez, hashCode;
+		// falta(m) atributo(s) aqui... ;)		
+        private readonly int vazios, vencedor;
+        private int jogadorDaVez, hashCode;
 
 		public EstadoLig4(int[,] tabuleiro, int jogadorDaVez) {
 			this.tabuleiro = tabuleiro;
 			this.jogadorDaVez = jogadorDaVez;
-			// @@@
-			vencedor = 0;
+            vazios = CalcularVazios();
+            // @@@
+            vencedor = 0;
 		}
 
 		public override string ToString() {
@@ -260,8 +261,8 @@ namespace Teste {
 
 		public bool IsTerminal {
 			get {
-				// @@@
-				return true;
+                // @@@
+                return (vencedor != 0) || (vazios == 0);                                
 			}
 		}
 
