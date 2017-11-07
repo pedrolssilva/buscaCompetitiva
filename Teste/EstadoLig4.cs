@@ -130,8 +130,8 @@ namespace Teste
                 conta = 1;
                 for (int row = 0; row < LINHAS - 1; row++)
                 {                  
-                    //if (!IsCelulaVazia(row, col))
-                    //{
+                    if (!IsCelulaVazia(row, col))
+                    {
                         if ((tabuleiro[row, col] == X) && (tabuleiro[row+1, col] == X))
                         {
                             conta++;
@@ -148,17 +148,17 @@ namespace Teste
                         {
                             conta = 1;
                         }
-                    //}
+                    }
                 }
             }
             //Horizontal
-            for (int row = 0; row < LINHAS - 1; row++)
+            for (int row = 0; row < LINHAS; row++)
             {
                 conta = 1;
                 for (int col = 0; col < COLUNAS; col++)
                 {
-                  //  if (!IsCelulaVazia(row, col))
-                  //  {
+                    if (!IsCelulaVazia(row, col))
+                    {
                         if ((tabuleiro[row, col] == X) && (tabuleiro[row, col + 1] == X))
                         {
                             conta++;
@@ -175,11 +175,11 @@ namespace Teste
                         {
                             conta = 1;
                         }
-                  //  }
+                    }
                 }
             }
             //Diagonal debaixo pra cima
-            for (int row = 0; row < LINHAS - 1; row++)
+            for (int row = 0; row < LINHAS; row++)
             {
                 conta = 1;
                 for (int col = 0; col < COLUNAS; col++)
