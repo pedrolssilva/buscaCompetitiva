@@ -152,13 +152,13 @@ namespace Teste
                 }
             }
             //Horizontal
-            for (int row = 0; row < LINHAS; row++)
+            for (int row = 0; row < LINHAS ; row++)
             {
                 conta = 1;
-                for (int col = 0; col < COLUNAS; col++)
+                for (int col = 0; col < COLUNAS -1; col++)
                 {
-                    if (!IsCelulaVazia(row, col))
-                    {
+                    /*if (!IsCelulaVazia(row, col))
+                    {*/
                         if ((tabuleiro[row, col] == X) && (tabuleiro[row, col + 1] == X))
                         {
                             conta++;
@@ -175,7 +175,7 @@ namespace Teste
                         {
                             conta = 1;
                         }
-                    }
+                  /*  }*/
                 }
             }
             //Diagonal debaixo pra cima
@@ -285,7 +285,7 @@ namespace Teste
             get
             {
                 // impossível existirem mais turnos do que células na matriz! ;)
-                return LINHAS * COLUNAS;
+                return (LINHAS * COLUNAS) /4;
             }
         }
 
